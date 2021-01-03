@@ -1,1 +1,1 @@
-This is just me praticing writing code in JavaScript and utilizing GitHub.
+This is just me practicing writing code in JavaScript and utilizing GitHub.

@@ -24,14 +24,22 @@
 
             console.log(multiply(5, 5));
 
-            function capitalize(str) {
-                result = str[0].toUpperCase() + str.slice(1, 20).toLowerCase();
+                function capitalize(str1) {
+                    result = str1[0].toUpperCase() +
+                        str1.slice(1, 20).toLowerCase();
                 return result;
             }
 
             console.log(capitalize('hElLo WoRlD!'));
-            console.log('asdf'[0].toUpperCase());
 
+    function lastLetter(str2) {
+        result = str2.charAt(str2.length - 1);
+        return result;
+    }
+
+    console.log(lastLetter('This is awesome'));
+
+                    
         </script>
     </body>
 

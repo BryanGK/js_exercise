@@ -75,3 +75,18 @@ console.log(isLeapYear(2021));
 // function leapYear(year) {
 //     return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
 // }
+
+/* ====== Eleoquent JS Data Structures ====== */
+
+const range = function (x, y) {
+    const numbers = Array.from({ length: (y - x)},
+        (_, key) => key + 1);
+    console.log(numbers);
+}
+
+
+// const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1 }, (_, i) => start + (i * step));
+
+// console.log(range(1, 10));
+
+range(5, 10);

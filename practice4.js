@@ -54,3 +54,31 @@
 // if (!(age >= 0 && age <= 5 || age >= 65)) {
 //     console.log("Not baby or senior");
 // }
+
+let maximum = parseInt(prompt("Enter the max number:"));
+while (!maximum) {
+    maximum = parseInt(prompt("Enter a valid number:"));
+}
+const targetNum = Math.floor(Math.random() * maximum) + 1;
+
+
+let guess = parseInt(prompt("Enter your guess:"));
+let attempts = 1;
+
+while (parseInt(guess) !== targetNum) {
+    if (guess === 'q') break;
+    attempts++;
+    if (guess > targetNum) {
+        guess = prompt("Too high, guess again:");
+    } else {
+        guess = prompt("Too low, guess again:");
+
+    }
+}
+if (guess === 'q') {
+    console.log("Quit");
+} else {
+    console.log("Congrats!");
+    console.log(`You got it! It took you ${attempts} guesses.`);
+}
+

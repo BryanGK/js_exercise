@@ -55,30 +55,56 @@
 //     console.log("Not baby or senior");
 // }
 
-let maximum = parseInt(prompt("Enter the max number:"));
-while (!maximum) {
-    maximum = parseInt(prompt("Enter a valid number:"));
-}
-const targetNum = Math.floor(Math.random() * maximum) + 1;
+// let maximum = parseInt(prompt("Enter the max number:"));
+// while (!maximum) {
+//     maximum = parseInt(prompt("Enter a valid number:"));
+// }
+// const targetNum = Math.floor(Math.random() * maximum) + 1;
 
 
-let guess = parseInt(prompt("Enter your guess:"));
-let attempts = 1;
+// let guess = parseInt(prompt("Enter your guess:"));
+// let attempts = 1;
 
-while (parseInt(guess) !== targetNum) {
-    if (guess === 'q') break;
-    attempts++;
-    if (guess > targetNum) {
-        guess = prompt("Too high, guess again:");
-    } else {
-        guess = prompt("Too low, guess again:");
+// while (parseInt(guess) !== targetNum) {
+//     if (guess === 'q') break;
+//     attempts++;
+//     if (guess > targetNum) {
+//         guess = prompt("Too high, guess again:");
+//     } else {
+//         guess = prompt("Too low, guess again:");
 
-    }
-}
-if (guess === 'q') {
-    console.log("Quit");
-} else {
-    console.log("Congrats!");
-    console.log(`You got it! It took you ${attempts} guesses.`);
-}
+//     }
+// }
+// if (guess === 'q') {
+//     console.log("Quit");
+// } else {
+//     console.log("Congrats!");
+//     console.log(`You got it! It took you ${attempts} guesses.`);
+// }
 
+
+
+// const daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+// function returnDay(dayNum) {
+//     if (dayNum < 1 || dayNum > 7) {
+//         return null;
+//     }
+//     return daysOfWeek[(dayNum - 1)];
+// }
+
+// console.log(returnDay(2));
+const names = ["  tim  ", "  bety  ", "   gary   "];
+// function cleanNames(names) {
+//          return names.map(function (name) {
+//         return name.trim();
+//     });
+// // }
+
+// console.log(newArray);
+
+const newArray = names.map(function (name) { 
+    return name.trim();
+});
+
+console.log(newArray);
